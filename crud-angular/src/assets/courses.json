@@ -2,19 +2,25 @@
   {
     "_id": 1,
     "name": "Angular",
-    "category": "Front-End",
+    "category": "front-end",
     "price": 27.90
   },
   {
     "_id": 2,
     "name": "React",
-    "category": "Front-End",
+    "category": "front-end",
     "price": 27.90
   },
   {
     "_id": 3,
     "name": "Vue",
-    "category": "Front-End",
+    "category": "front-end",
+    "price": 27.90
+  },
+  {
+    "_id": 4,
+    "name": "Java",
+    "category": "back-end",
     "price": 27.90
   }
 ]
