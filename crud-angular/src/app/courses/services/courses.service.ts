@@ -8,7 +8,7 @@ import { delay, first, tap } from 'rxjs';
 })
 export class CoursesService {
 
-  private readonly BASE_API = '/assets/courses.json'
+  private readonly BASE_API = 'api/courses'
 
   // injeto o módulo HttpClient
   constructor(private httpClient: HttpClient) { }
