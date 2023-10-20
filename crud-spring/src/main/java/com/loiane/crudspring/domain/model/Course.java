@@ -1,5 +1,9 @@
 package com.loiane.crudspring.domain.model;
 
+import java.math.BigDecimal;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,6 +14,7 @@ import jakarta.persistence.Id;
 public class Course {
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@JsonProperty("_id")
 	private Long id;
 	
 	@Column(length = 200, nullable = false)
@@ -17,6 +22,8 @@ public class Course {
 	
 	@Column(length = 10, nullable = false)
 	private String category;
+	
+	private BigDecimal price;
 
 	public Course() {
 	}
@@ -43,6 +50,14 @@ public class Course {
 
 	public void setCategory(String category) {
 		this.category = category;
+	}
+
+	public BigDecimal getPrice() {
+		return price;
+	}
+
+	public void setPrice(BigDecimal price) {
+		this.price = price;
 	}
 	
 	

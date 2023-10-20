@@ -1,0 +1,1 @@
+INSERT INTO courses(category, name, price) VALUES ('front-end', 'Angular com Spring', 27.90);
